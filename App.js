@@ -76,5 +76,5 @@ function handleTypes(req, res) {
 
 app.get( '/movie', validateAuthorization, handleTypes);
 
-app.listen(PORT, () => {
-});
+
+module.exports = app
