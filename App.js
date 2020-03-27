@@ -5,7 +5,6 @@ const morgan = require('morgan');
 const cors = require('cors');
 const helmet = require('helmet');
 const app = express();
-const PORT = process.env.PORT || 8000
 const data = require('./movies-data-small.json');
 const morganSetting = 
   process.env.NODE_ENV === 'production' ? 'tiny' : 'common'
